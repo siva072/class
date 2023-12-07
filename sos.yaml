@@ -1,0 +1,13 @@
+apiVersion : v1
+kind : ReplicaSet
+metadata: 
+    name: range
+    labels: 
+       app: first
+spec :
+   containers:
+     -name: dig
+     image : nginx
+     ports: 
+      -ContainerPort: 8080
+       
